@@ -10,7 +10,7 @@ function init() {
         return 1
     fi
     mkdir "$PROJECT_NAME"
-    echo "Neues Projekt '$PROJECT_NAME' erstellt!"
+    echo "Neues Projekt '$PROJECT_NAME' wurde erstellt!"
 }
 
 # Die Hauptbedienfunktion, die die Befehle verarbeitet
