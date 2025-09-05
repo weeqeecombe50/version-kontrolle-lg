@@ -9,7 +9,7 @@ function init() {
         echo "Fehler: Bitte geben Sie einen Projektnamen an!"
         return 1
     fi
-    mkdir "$PROJECT_NAME"
+    mkdir "$PROJECT_NAME" || { echo "Fehler: Das Verzeichnis konnte nicht erstellt werden!"; return 1; }
     echo "Neues Projekt '$PROJECT_NAME' wurde erstellt!"
 }
 
