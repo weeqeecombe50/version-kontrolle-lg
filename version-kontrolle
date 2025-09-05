@@ -5,6 +5,10 @@
 # Eine Funktion um ein neues Projekt zu initialisieren
 function init() {
     PROJECT_NAME=$1
+    if [ -z "$PROJECT_NAME" ]; then
+        echo "Fehler: Kein Projektname angegeben!"
+        return 1
+    fi
     mkdir "$PROJECT_NAME"
     echo "Neues Projekt '$PROJECT_NAME' erstellt!"
 }
