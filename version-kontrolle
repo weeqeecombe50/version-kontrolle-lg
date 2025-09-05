@@ -6,7 +6,7 @@
 function init() {
     PROJECT_NAME="$1"
     if [ -z "$PROJECT_NAME" ]; then
-        echo "Fehler: Kein Projektname angegeben!"
+        echo "Fehler: Bitte geben Sie einen Projektnamen an!"
         return 1
     fi
     mkdir "$PROJECT_NAME"
