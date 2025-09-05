@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Version Kontrolle LG
 
 # Eine Funktion um ein neues Projekt zu initialisieren
 function init() {
-    PROJECT_NAME=$1
+    PROJECT_NAME="$1"
     if [ -z "$PROJECT_NAME" ]; then
         echo "Fehler: Kein Projektname angegeben!"
         return 1
@@ -14,7 +14,7 @@ function init() {
 }
 
 # Die Hauptbedienfunktion, die die Befehle verarbeitet
-if [[ $1 == "init" ]]; then
+if [[ "$1" == "init" ]]; then
     init "$2"
 else
     echo "Verwendung: ./version-kontrolle init <Projektname>"
