@@ -2,7 +2,7 @@
 
 # Version Kontrolle LG
 
-# Eine Funktion um ein neues Projekt zu initialisieren
+# Eine Funktion, um ein neues Projekt zu initialisieren
 function init() {
     PROJECT_NAME="$1"
     if [ -z "$PROJECT_NAME" ]; then
@@ -13,7 +13,7 @@ function init() {
     echo "Neues Projekt '$PROJECT_NAME' wurde erstellt!"
 }
 
-# Die Hauptbedienfunktion, die die Befehle verarbeitet
+# Die Hauptbedienungsfunktion, die die Befehle verarbeitet
 if [[ "$1" == "init" ]]; then
     init "$2"
 else
